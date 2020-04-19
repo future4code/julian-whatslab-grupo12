@@ -1,8 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
-import { ContainerConversa } from './components/ContainerConversa';
-import { AdicionarMensagem } from './components/AdicionarMensagem';
+import './App.css'; 
+import { ConversaMensagem } from './components/ConversaMensagem';
 import styled from "styled-components"
 
 const ContainerPrincipal = styled.div`
@@ -19,10 +18,11 @@ const ContainerPrincipal = styled.div`
 
 function App() {
   return (
-    <ContainerPrincipal>
-      <ContainerConversa/>
-      <AdicionarMensagem/>
-    </ContainerPrincipal>
+    <div>
+      <ContainerPrincipal>
+        <ConversaMensagem/> 
+      </ContainerPrincipal>
+    </div>
   );
 }
 
